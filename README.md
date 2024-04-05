@@ -217,7 +217,7 @@ Input | ![](/img/milestone1/inputCurve.png)
 
 
 ### Corners
-Once we have the ground plane, it's convenient to detect the concave (green) and convex (red) corner points. The process is as following:
+Once we have the ground plane, it's convenient to detect the concave (red) and convex (green) corner points (concavity evaluated based on a point of view inside the corridor). The process is as following:
   - Based on the un-dissolved map and base grid's spacing, we can extrude the sides using `PolyExtrude`.
   - Use a `Labs Measure Curvature` node to measure convex and concave curvature values.
   - Extract the corner points using `Blast` nodes.
